@@ -1,4 +1,4 @@
-// MULTI THREADS : 
+// MULTI THREADS : before jumping into this topic : look at 13_RUNNABLE.java file
 
 
 

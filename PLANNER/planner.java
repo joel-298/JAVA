@@ -1,0 +1,7 @@
+// WEDNESDAY
+// STEP 1 : OOPS : // 1st half of the DAY 
+// STEP 2 : STRINGS // 2nd half of the DAY
+
+// THURSDAY
+// STEP 1 : GENERIC AND DSA // 1ST HALF OF THE DAY
+// STEP 2 : FILE HANDELING // 2nd HALF OF THE DAY
