@@ -14,27 +14,28 @@ interface Resizable {
 
 class Circle implements GeometricObject
 {
-	protected double radius;
+	public double radius ;
     public Circle(double radius){
-    this.radius=radius;
+    	this.radius = radius ; 
     }
-	public double getPerimeter(){
-    return 2*Math.PI*radius;
+    public double getPerimeter(){
+    	return Math.round(2*Math.PI*radius*100.0)/100.0 ;           // THIS FLOAT IS DISCUSSED IN 1_FLOAT_DECIMAL_DIGITS.java in BASICS : 
     }
     public double getArea(){
-    return Math.PI*(radius*radius);
+    	return Math.round(Math.PI*radius*radius*100.0)/100.0 ;           // THIS FLOAT IS DISCUSSED IN 1_FLOAT_DECIMAL_DIGITS.java in BASICS : 
     }
-    public String toString() {
-        return "Circle[radius=" + radius + "]";
+    public String toString(){
+    	return "Circle[radius="+String.format("%.1f",radius)+"]" ;
     }
 }
+
 class ResizableCircle extends Circle implements Resizable
 {
 	public ResizableCircle(double radius){
-    super(radius);
+    	super(radius) ;
     }
     public void resize(int percent){
-    radius = radius * percent / 100.0;
+    	radius = radius * percent / 100.0;         // THIS FLOAT IS DISCUSSED IN 1_FLOAT_DECIMAL_DIGITS.java in BASICS : 
     }
 }
 
