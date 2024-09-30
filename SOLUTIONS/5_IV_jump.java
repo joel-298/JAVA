@@ -1,0 +1,1 @@
+// yae wala ata nahi tha : jump game thi 

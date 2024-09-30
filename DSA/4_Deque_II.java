@@ -1,2 +1,0 @@
-// CREATING DEQUE with ARRAY 
-

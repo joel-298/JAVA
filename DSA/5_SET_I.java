@@ -1,4 +1,4 @@
-// HASHSET : 
+// HASHSET : A HashSet doesn't maintain any order of elements, while a LinkedHashSet keeps elements in the order they were added.
 
 import java.util.HashSet ; 
 import java.util.TreeSet;             // ---(3)
@@ -76,5 +76,11 @@ public class Main {
 
 // EXPLANATIONS :
 // (1) will not get added and size will not increase because set does not contains dublicates
-// (2) By default in case of Integer it will arrage in Ascending Order
+// (2) By default in case of Integer it will arrage in Ascending Order // NOT TRUE 
 // (3) REPRESENTS DESCENDING ORDER
+
+
+
+
+
+// all of the functions are applicable for LinkedHastSEt
