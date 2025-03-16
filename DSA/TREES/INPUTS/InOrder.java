@@ -1,4 +1,4 @@
-// PRE-ODER INPUT : 
+// IN-ORDER INPUT : 
 import java.util.Scanner;
 
 class TreeNode {

@@ -5,7 +5,7 @@ class Solution {
             result.add(current.toString()) ; 
             return ;
         }
-        if(i < 0 || j < 0 || i > n || j > m || visited[i][j]) {
+        if(visited[i][j]) {
             return ; 
         }
         

@@ -2,3 +2,14 @@
 // 1) CREATE A ARRAY 
 // 2) ADD A ELEMENT IN LAST 
 // 3) WRITE THE HEAPIFY CODE OF MAX HEAP 
+// THIS IS THE BRUTE FORCE WHICH WILL TAKE O(n) TIME BECAUSE HEAPIFY TAKES O(n)
+
+
+// BUT SINCE INSERT IN A HEAP TAKES O(log(n)) TIME AND FOLLOWS HEAPIFY-UP APPROACH 
+// SO THE PROPER CODE IS DOWN BELOW 
+// PSEUDO CODE : 
+// 1) create class
+// 2) Add element and call a heapify function - which will follow heapify up approach
+
+
+

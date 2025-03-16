@@ -1,31 +1,31 @@
 class Solution {
 
     // Check if placing a queen is safe
-    public boolean isSafe(List<String> current, int row, int column, int n) {
-        // Check the current row horizontally
+    public boolean isSafe(List<String> board, int row, int column, int n) {
+        // Check the board row horizontally
         for (int i = 0; i < n; i++) {
-            if (current.get(row).charAt(i) == 'Q') {
+            if (board.get(row).charAt(i) == 'Q') {
                 return false;
             }
         }
 
         // Check vertically
         for (int i = 0; i < row; i++) {
-            if (current.get(i).charAt(column) == 'Q') {
+            if (board.get(i).charAt(column) == 'Q') {
                 return false;
             }
         }
 
         // Check left diagonal
         for (int i = row - 1, j = column - 1; i >= 0 && j >= 0; i--, j--) {
-            if (current.get(i).charAt(j) == 'Q') {
+            if (board.get(i).charAt(j) == 'Q') {
                 return false;
             }
         }
 
         // Check right diagonal
         for (int i = row - 1, j = column + 1; i >= 0 && j < n; i--, j++) {
-            if (current.get(i).charAt(j) == 'Q') {
+            if (board.get(i).charAt(j) == 'Q') {
                 return false;
             }
         }
@@ -34,39 +34,43 @@ class Solution {
     }
 
     // Recursive helper function
-    public void helper(int row, int n, List<String> current, List<List<String>> result) {
+    public void helper(int row, int n, List<String> board, List<List<String>> result) {
         if (row == n) {
-            result.add(new ArrayList<>(current));
+            result.add(new ArrayList<>(board));
             return;
         }
 
         for (int j = 0; j < n; j++) {
-            if (isSafe(current, row, j, n)) {
+            if (isSafe(board, row, j, n)) {
                 // Place the queen by modifying the string
-                char[] rowChars = current.get(row).toCharArray();
+                char[] rowChars = board.get(row).toCharArray();
                 rowChars[j] = 'Q';
-                current.set(row, new String(rowChars));
+                board.set(row, new String(rowChars));
 
                 // Recurse for the next row
-                helper(row + 1, n, current, result);
+                helper(row + 1, n, board, result);
 
                 // Backtrack
                 rowChars[j] = '.';
-                current.set(row, new String(rowChars));
+                board.set(row, new String(rowChars));
             }
         }
     }
 
     public List<List<String>> solveNQueens(int n) {
         List<List<String>> result = new ArrayList<>();
-        List<String> current = new ArrayList<>();
+        List<String> board = new ArrayList<>();
+        StringBuilder s = new StringBuilder("") ; 
 
         // Initialize the board with empty rows
         for (int i = 0; i < n; i++) {
-            current.add(".".repeat(n));
+            s.append(".");  
+        }
+        for(int i = 0 ; i < n ; i++) {
+            board.add(s.toString()) ; 
         }
 
-        helper(0, n, current, result);
+        helper(0, n, board, result);
         return result;
     }
 }
