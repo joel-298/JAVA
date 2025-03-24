@@ -1,11 +1,11 @@
-// STATIC  KEYWORD :  -->  can we have a static function insdie a NON static : TRUE -------(1)
-//                    --> can we have a NON STATIC inside a STATIC : TRUE 
+// STATIC  KEYWORD :  -->  can we have a static function from a NON static : TRUE -------(1)
+//                    --> can we call a NON STATIC from a STATIC function : TRUE // BUT ONLY THROUGH OBJECT 
 
 class Human {
     String name ; 
     static int population = 0 ;
 
-    public static void setpopulation(int number){
+    public static void setpopulation(int number){ // this function is only allowed to change the static values 
         Human.population += number ; 
     }
 
@@ -29,7 +29,7 @@ public class Main {
 
 
     public void display(){                 // -------------------------------(2)
-        System.out.println("NON STATIC INSIDE A STATIC") ; 
+        System.out.println("NON STATIC FROM A STATIC") ; 
     }
 }
 

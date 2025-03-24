@@ -59,6 +59,6 @@ public class Main{
 //           Therefore we use Static keyword , because it is independent to objects and can run inside the class   
 
 // (2) will give error because inside of STATIC FUNCTION we cannot use anything that is not STATIC 
-//         i.e it can only access NON STATIC DATA : because 
+//         i.e it can only access STATIC DATA : because 
 // NOTE : NON STATIC DATA BELONGS TO OBJECTS : 
 // THEREFORE (3) will not give error
