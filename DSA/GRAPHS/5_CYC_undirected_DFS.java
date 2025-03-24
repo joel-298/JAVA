@@ -1,3 +1,7 @@
+// CONDITION if the visiting node or childe is already visited 
+// and its not even the parent then the cycle is present !
+
+
 import java.util.* ; 
 import java.io.* ;
 
