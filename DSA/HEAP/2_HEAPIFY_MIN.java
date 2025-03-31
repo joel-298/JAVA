@@ -1,4 +1,4 @@
-// MIN HEAP : parent <= child 
+// MIN HEAP : parent <= child (HEAPIFY DOWN FUNCTIONS)
 // 0 based indexing
 import java.util.* ; 
 

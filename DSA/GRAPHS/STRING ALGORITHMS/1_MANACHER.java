@@ -19,7 +19,7 @@ class Solution {
 
         // 3) Loop 
         for(int i = 0 ; i < newString.length() ; i++) {
-            int mirror = 2 * center - i ; 
+            int mirror = 2 * center - i ;  // can u explain the importance of this condition use the example abababc
             if(right > i) { 
                 p[i]=Math.min(p[mirror],right-i) ;
             }

@@ -1,4 +1,4 @@
-// MAX HEAP : parent >= child 
+// MAX HEAP : parent >= child (HEAPIFY DOWN FUNCTIONS)
 // 0 based indexing
 import java.util.* ; 
 
