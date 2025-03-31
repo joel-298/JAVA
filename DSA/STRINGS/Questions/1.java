@@ -1,0 +1,1 @@
+// MANACHERS(Longest common substring) AND KMP 
