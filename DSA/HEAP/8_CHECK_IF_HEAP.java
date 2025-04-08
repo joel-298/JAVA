@@ -33,3 +33,27 @@ static int isMaxHeap(int array[], int n){
         return 0 ;
     }
 }
+
+
+
+
+HEAP : 
+
+Heapify :  N = original size
+pass        : N-1
+forloop   : (N/2) -1
+
+
+HEAP SORT : 
+for loop (N-1 ; N > 0 ) {
+        // SWAP arr[0] and arr[i] 
+        // HEAPIFY  :    i-1 , 0  
+}
+
+
+HEAPIFY ADD 
+pass the last index 
+parent = (index/2) -1
+
+HEAPIFY DELETE 
+normal heapify function 
