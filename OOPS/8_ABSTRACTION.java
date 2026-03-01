@@ -1,5 +1,5 @@
 // ABSTRACTION : Hiding complex implementation details and showing only the necessary features of an object.
-// IN SIMPLE TERNMS : for exmple we are using some inbuilt functions but the they have a backend code which we do not really care about
+// IN SIMPLE TERMS : for exmple we are using some inbuilt functions but the they have a backend code which we do not really care about
 // therefore it means hiding the backend details but only showing the frontend (hiding the implementation part)
 
 
